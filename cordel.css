@@ -47,6 +47,7 @@ header a, footer a{
 }
 header a:hover , footer a:hover{
     text-decoration: underline; 
+    color: green;
 }
 
 section{    
