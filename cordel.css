@@ -6,11 +6,16 @@
     margin: 0px;
     padding: 0px;
 }
+:root{  
+    --comum: Verdana, Geneva, Tahoma, sans-serif ;
+    --padrao:'Sriracha' ;
+    --cordel: 'Passion One';
+}
 
-html , body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+body{
+    font-family: var(--comum);
     min-height: 100vh;
-    background-color: rgb(43, 255, 255);
+    background-color: darkgray;
 }
 header{ 
     background-color: black;
@@ -19,7 +24,7 @@ header{
  
 }
 header h1{  
-    font-family: 'Passion One';
+    font-family: var(--cordel);
     padding-top: 50px;
     font-variant: small-caps;
     font-size: 9vw;
@@ -49,14 +54,16 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-family: 'Sriracha';
+    font-family: var(--padrao);
     font-size: 3.5vw;
+
     
     
 
 }
 section p{  
     padding-bottom: 2em;
+    white-space: pre-line;
 }
 section.normal{ 
     background-color: white;
@@ -67,7 +74,7 @@ section.imagem{
     
     background-color: rgb(79, 77, 77) ;
     color: whitesmoke;
-    box-shadow: inset 5px 5px 10px 0px black ;
+    box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.596) ;
     
    
 }
@@ -75,22 +82,22 @@ section.imagem p{
     padding: 10px;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.469);
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.678);
     
 }
 section#imagem1{    
     background-image: url('imagens/background001.jpg');
     background-size: cover;
-    background-position: right center;
+    background-position:  center center;
     background-attachment: fixed;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     
 }
 section#imagem2{    
     background-image: url('imagens/background002.jpg');
     background-size: cover;
     background-attachment: fixed;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
 }
     
 
@@ -99,6 +106,9 @@ footer{
     text-align: center;
     background-color: black;
     padding: 10px;
+}
+footer p{   
+    font-size: 1.5vw;
 }
 footer a:hover{ 
     color: rgb(22, 223, 22);
